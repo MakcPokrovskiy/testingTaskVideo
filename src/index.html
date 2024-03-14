@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div class="content">
+   <video
+      id="my-video"
+      class="video-js vjs-theme-forest"
+      controls
+      preload="auto"
+      width="640"
+      height="491"
+      poster="https://xakep.ru/wp-content/uploads/2018/08/180618/js-h-850x491.jpg"
+      data-setup="{}"
+   >
+      <source src=" //vjs.zencdn.net/v/oceans.mp4 " type="video/mp4"/>
+      <source src="video.webm" type="video/webm"/>
+   </video>
+   <div class="chat-container">
+    <div class="chat"></div>
+    <div class="user">
+      <form>
+        <label for="user-message">Вы:</label>
+        <input type="text" id="user-message" class="message-input" placeholder="Введите сообщение">
+      </form>
+      <button  class="submit-form">Отправить</button>
+    </div>
+  </div>
+</div>
+
+  <script src="main.js"></script>
+</body>
+</html>

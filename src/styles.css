@@ -1,0 +1,78 @@
+@import '@videojs/themes/dist/forest/index.css';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.video-js {
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.content {
+    padding: 0 20px;
+    max-width: 100%;
+    display: flex;
+    gap: 5px;
+}
+
+.chat-container {
+    opacity: 0;
+}
+
+.chat {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 15px;
+    width: 100%;
+    height: 450px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    background-color: #f1efef;
+    overflow-y: auto;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding-top: 10px;
+}
+
+.message-input {
+    padding: 10px;
+    font-size: 16px;
+    height: 20px;
+}
+
+.submit-form {
+    padding: 4px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width: 998px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .video-js {
+        width: 100%;
+    }
+
+    .chat {
+
+        width: 100%;
+        height: 200px;
+    }
+}
+
